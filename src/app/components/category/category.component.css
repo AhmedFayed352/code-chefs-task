@@ -1,0 +1,40 @@
+.content {
+  padding-inline: 96px;
+}
+.content span {
+  display: block;
+  color: #cb4a4c;
+  margin-bottom: 30px;
+}
+.searching {
+  margin-bottom: 55px;
+}
+button {
+  background: var(--main-color);
+  color: #fff;
+  padding: 8px 45px;
+  border-radius: 20px;
+}
+.table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px 15px 0 0 !important;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.table thead {
+  display: block;
+  width: 100%;
+  --bs-table-bg: #cb4a4c;
+  --bs-table-color: #fff;
+}
+tbody {
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+th , td {
+  width: 200px;
+}

@@ -1,0 +1,35 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: var(--main-color);
+  border-radius: 0 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 47px;
+  margin-bottom: 30px;
+}
+.sidebar ul li {
+  padding-block: 16px;
+  padding-inline: 60px;
+}
+.sidebar ul li a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+.sidebar ul li a span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.active {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.active a {
+    color: #cb4a4c !important;
+}

@@ -1,0 +1,12 @@
+.head {
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 27px;
+}
+ul {
+    padding-inline: 96px;
+}
+ul li {
+    font-weight: 600;
+    color: var(--main-color);
+    padding: 20px;
+}

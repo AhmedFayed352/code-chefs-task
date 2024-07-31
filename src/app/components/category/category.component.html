@@ -1,0 +1,33 @@
+<div class="content">
+    <span>Home >> Category</span>
+    <div class="searching d-flex">
+        <input [(ngModel)]="searchItem" class="form-control me-4" type="text" name="search" id="search" placeholder="Search">
+        <button>Create</button>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover text-center">
+          <thead class="styling">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Image</th>
+              <th>DESC</th>
+              <th>Statues</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="fixed-table">
+                <ng-container *ngFor="let items of allCategoryItems|search:searchItem">
+                  <tr *ngIf="items.id != 1">
+                    <th scope="col">{{items.id}}</th>
+                    <td>{{items.name}}</td>
+                    <td>{{items.image}}</td>
+                    <td>{{items.description}}</td>
+                    <td>{{items.isDelete}}</td>
+                    <td>View</td>
+                  </tr>
+                </ng-container>
+          </tbody>
+        </table>
+      </div>      
+</div>
